@@ -1,0 +1,40 @@
+import pandas as pd
+import mysql.connector
+from sqlalchemy import create_engine
+import os
+from dotenv import load_dotenv
+from urllib.parse import quote_plus
+
+
+load_dotenv()
+def get_connection():
+    conn = mysql.connector.connect(
+        host="localhost",
+        user="root",
+        database="financial_analytics_db",
+        password=os.getenv('DB_PASSWORD')
+    )
+    return conn 
+
+if __name__ == "__main__":
+    conn = get_connection()
+    print("Connected:", conn.is_connected())
+    conn.close()
+
+
+
+
+load_dotenv()
+password = quote_plus(os.getenv("DB_PASSWORD"))
+
+engine = create_engine(f"mysql+pymysql://root:{password}@localhost/financial_analytics_db")
+
+df = pd.read_csv("data/titan_pipeline_new.csv")  
+
+df.to_sql("titan_full", engine, if_exists="replace", index=False)
+
+print("Loaded successfully.")
+
+
+
+
