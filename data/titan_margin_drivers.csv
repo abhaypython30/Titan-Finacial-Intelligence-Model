@@ -1,0 +1,2 @@
+main_margin_driver,corr_raw_material_cost,corr_power_fuel,corr_other_mfr_exp,corr_employee_cost,corr_selling_admin,corr_other_expenses,covid_decision,rationale,final_base,final_bear,final_bull
+other_expenses,0.38915557669010425,0.4732631999276331,0.22994727408425653,0.27436113095759207,0.6971732633834062,-0.8808505233878301,excluded,"COVID years excluded for consistency with Day2, though impact on margin specifically was minimal (Base P50 diff=0.00pp) - unlike the meaningful growth-side impact.",10.140239881116496,9.51087783720596,10.672434597542622
