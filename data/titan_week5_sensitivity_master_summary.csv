@@ -1,0 +1,5 @@
+finding,detail
+WACC x Terminal Growth spread,Rs.1051.62 to Rs.3867.55 (3.7x)
+Growth x Margin range,Rs.1250.40 to Rs.4862.42 (0 negative cells)
+Monte Carlo median value/share,"Rs.2882.35 (P5=2226.83, P95=4309.70), 0.0% negative-equity probability"
+Most impactful assumption,wacc - Rs.1602.86 (58.0% of base)

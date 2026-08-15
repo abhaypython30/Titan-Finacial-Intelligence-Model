@@ -1,0 +1,5 @@
+driver,base_input,value_at_minus10pct,value_at_base,value_at_plus10pct,absolute_swing_rs,swing_as_pct_of_base_value,rank
+wacc,4.58,3746.97,2761.44,2144.11,1602.86,58.0,1
+ebitda_margin,10.14,2133.55,2761.44,3389.33,1255.78,45.5,2
+terminal_growth,2.58,2463.43,2761.44,3147.72,684.29,24.8,3
+revenue_growth,25.9,2622.23,2761.44,2906.02,283.79,10.3,4

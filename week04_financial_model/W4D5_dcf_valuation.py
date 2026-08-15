@@ -85,7 +85,7 @@ def project_financials(df, checks, scenario, terminal_growth):
     last_nwc = (df["debtors"] + df["inventory"] + df["cash_operating"] - payables).iloc[-1]
     nwc_pct_sales = last_nwc / last_sales
 
-    log.info(f"[{scenario}] NWC is {nwc_pct_sales:.1%} of sales - given Titan's "
+    log.debug(f"[{scenario}] NWC is {nwc_pct_sales:.1%} of sales - given Titan's "
               f"high working-capital intensity (verified in Week2), holding this "
               f"ratio flat while growth compounds at {growth:.1%} for 5 years "
               f"without tapering would produce an unrealistic cash drag. Growth "
@@ -150,7 +150,7 @@ def discount_and_value(forecast_df, wacc, terminal_growth, df, checks):
                     f"({shares_derived:,.0f}) differ by {diff_pct:.2f}% - "
                     f"investigate before trusting per-share value.")
     else:
-        log.info(f"Direct shares ({shares_direct:,.0f}) matches derived "
+        log.debug(f"Direct shares ({shares_direct:,.0f}) matches derived "
                   f"({shares_derived:,.0f}) within {diff_pct:.2f}% - cross-check passed.")
 
     value_per_share = (equity_value * 1e7) / shares_direct
