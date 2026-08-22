@@ -248,3 +248,41 @@ full reasoning stays in one place.
    not yet reconciled project-wide.
 2. Gold Metal Loan / lease liability amounts remain embedded within the
    aggregate `debt` figure, not separately disclosed or decomposed.
+
+---
+
+## Week 5, Day 4 (REVISED) — Driver Ranking Methodology Correction
+
+- **External review correctly identified a methodology flaw**: the original
+  perturbation used a RELATIVE +/-10% move applied uniformly, which tested
+  wildly different absolute magnitudes per driver depending on scale
+  (WACC tested at only +/-0.46pp, Terminal Growth at only +/-0.26pp,
+  Revenue Growth at +/-2.59pp, Margin at +/-1.01pp) - not a fair,
+  comparable basis, and the "+/-10%" label was ambiguous between relative-%
+  and percentage-point change.
+- **FIXED**: standardized every driver to an ABSOLUTE +/-1.00 percentage
+  point perturbation. Added data-driven DIRECTION tracking (does
+  increasing the driver raise or lower value - computed by comparing
+  actual +1pp vs -1pp results, not assumed).
+- **Corrected ranking** (previously: WACC #1, Margin #2, Terminal Growth
+  #3, Revenue Growth #4 under the old, uneven-basis methodology):
+
+  | Rank | Driver | Swing (Rs./share) | % of base | Direction |
+  |---|---|---|---|---|
+  | 1 | WACC | 4,424.54 | 160.2% | Increasing WACC LOWERS value |
+  | 2 | Terminal Growth | 3,477.46 | 125.9% | Increasing TG RAISES value |
+  | 3 | EBITDA Margin | 1,238.44 | 44.8% | Increasing margin RAISES value |
+  | 4 | Revenue Growth | 109.56 | 4.0% | Increasing growth RAISES value |
+
+- **Sharper finding than the original**: Terminal Growth's old #3 ranking
+  was partly an artifact of being tested on a much smaller absolute
+  window than other drivers - on a fair basis, it ranks #2, essentially
+  tied in magnitude with WACC. The corrected, more precise conclusion:
+  Titan's valuation is dominated not by WACC in isolation, but by the
+  **WACC-minus-Terminal-Growth buffer itself** - both components
+  independently rank as the top two drivers because both sit on
+  opposite sides of the same thin 2.00pp gap feeding directly into the
+  1/(WACC-g) terminal value formula.
+- Full integrity test re-run and confirmed 13/13 passed against the
+  corrected schema. Synthesis report and all Week7 Day1 charts
+  regenerated against this corrected data.

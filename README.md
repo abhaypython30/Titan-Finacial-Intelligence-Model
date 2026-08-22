@@ -103,9 +103,13 @@ writes to it.
   management's own commentary on Gold Metal Loan financing cost (~3%).
 - **Base case value/share: Rs. 2,761.44** (Bear Rs.2,199.83, Bull Rs.3,827.55)
   - a tight Bear-Bull spread, reflecting Titan's narrow, stable margin band.
-- **WACC is the #1 value driver** - not margin or growth - due to the
-  thin buffer between WACC (4.58%) and terminal growth (2.58%), which
-  amplifies terminal value sensitivity to small WACC changes.
+- **WACC is the #1 value driver, closely followed by Terminal Growth**
+  (standardized +/-1.00 percentage point basis: WACC swing Rs.4,424.54
+  / 160.2% of base; Terminal Growth swing Rs.3,477.46 / 125.9% of base)
+  - both driven by the same thin 2.00pp buffer between WACC (4.58%) and
+  locked terminal growth (2.58%). The precise finding: Titan's
+  valuation is dominated by the WACC-minus-Terminal-Growth GAP itself,
+  not WACC alone.
 - **Implied DCF multiples sit below Titan's own current market pricing**
   in every scenario, including Bull - a quantified, explainable gap
   between this conservative, growth-tapered methodology and current
